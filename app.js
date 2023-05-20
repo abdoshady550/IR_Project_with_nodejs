@@ -386,7 +386,7 @@ console.log(termd.termSearch(search));
       // console.log(selectedAlgorithm);
         
         // console.log(lusearch.result(tokenizer.token));
-      console.log(lusearch.resultAll(steem.stemmOne(search)));
+        console.log(lusearch.resultAll(tokenizer.token));
 
       console.log(`lucene Done `);
     }

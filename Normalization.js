@@ -43,13 +43,13 @@ const normAll = () => {
     console.log("---");
   }
 
-  console.log(tok);
+
 };
 const normOne = (word) => {
   const tok = normalize(word);
   console.log(tok)
 
 }
-// console.log(normAll());
+console.log(normOne('the'));
 
-module.exports={normAll,normOne }
+// module.exports={normAll,normOne }
