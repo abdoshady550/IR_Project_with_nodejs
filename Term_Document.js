@@ -17,7 +17,7 @@ files.forEach((file) => {
   }
 });
 const documents =docs;
-
+const termDocumentMatrix = [];
 
 const All=(documents)=>{
 // Build vocabulary
@@ -33,7 +33,7 @@ for (let i = 0; i < documents.length; i++) {
 }
 
 // Build term document matrix
-const termDocumentMatrix = [];
+
 for (let i = 0; i < documents.length; i++) {
   const tokens = tokenizer.tokenize(documents[i].toLowerCase());
   const docVector = new Array(Object.keys(vocabulary).length).fill(0);
@@ -62,7 +62,7 @@ const termSearch=(word)=>{
   }
   
   // Build term document matrix
-  const termDocumentMatrix = [];
+  
   for (let i = 0; i < documents.length; i++) {
     const tokens = tokenizer.tokenize(documents[i].toLowerCase());
     const docVector = new Array(Object.keys(vocabulary).length).fill(0);

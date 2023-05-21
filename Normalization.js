@@ -50,5 +50,6 @@ const normOne = (word) => {
   console.log(tok)
 
 }
+const All=normAll()
 
-module.exports={normAll,normOne }
+module.exports={normAll,All,normOne }

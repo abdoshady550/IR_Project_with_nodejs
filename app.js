@@ -86,14 +86,15 @@ console.log(termd.All(tokenizer.docs));
     if (selectedAlgorithm === "lu") {
       // console.log(selectedAlgorithm);
         // console.log(tokenizer.tokenize(search));
-        // console.log(lusearch.result(tokenizer.token));
-      console.log(lusearch.resultAll(Noemali.normAll));
+        console.log(lusearch.result(tokenizer.token));
+      // console.log(lusearch.resultAll(Noemali.All));
 
       console.log(`lucene Done `);
     }
     if (selectedAlgorithm === "TD") {
 // console.log(termd.terdoc(termd.documents))
-console.log(termd.All(Noemali.normAll));
+// console.log(termd.All(Noemali.All));
+console.log(termd.All(tokenizer.docs));
 // console.log(termd.termSearch(search));
       console.log(`Term Document Done `);
     }
@@ -139,7 +140,7 @@ console.log(termd.All(Noemali.normAll));
     }
     if (selectedAlgorithm === "TD") {
 // console.log(termd.terdoc(termd.documents))
-console.log(termd.All(steem.stemmedTexts));
+console.log(termd.All(tokenizer.docs));
 // console.log(termd.termSearch(search));
       console.log(`Term Document Done `);
     }
@@ -189,7 +190,7 @@ console.log(termd.All(steem.stemmedTexts));
     }
     if (selectedAlgorithm === "TD") {
 // console.log(termd.terdoc(termd.documents))
-console.log(termd.All(limity.lemmatizedWords));
+console.log(termd.All(tokenizer.docs));
 // console.log(termd.termSearch(search));
       console.log(`Term Document Done `);
     }
@@ -236,7 +237,7 @@ console.log(termd.All(limity.lemmatizedWords));
   if (selectedAlgorithm === "TD") {
    
 // console.log(termd.terdoc(termd.documents))
-console.log(termd.All(stopWords.filteredTokens));
+console.log(termd.All(tokenizer.docs));
 // console.log(termd.termSearch(search));
     console.log(`Term Document Done `);
   }
@@ -340,7 +341,7 @@ console.log(termd.termSearch(search));
       // console.log(selectedAlgorithm);
         
         // console.log(lusearch.result(tokenizer.token));
-      console.log(lusearch.result(Noemali.normOne,search));
+        console.log(tokenizer.tokenize(search));
 
       console.log(`lucene Done `);
     }
